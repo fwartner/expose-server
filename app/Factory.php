@@ -41,7 +41,7 @@ use Expose\Server\LoggerRepository\NullLogger;
 use Expose\Server\StatisticsCollector\DatabaseStatisticsCollector;
 use Expose\Server\StatisticsRepository\DatabaseStatisticsRepository;
 use Expose\Server\SubdomainRepository\DatabaseSubdomainRepository;
-use React\Async\SQLite\DatabaseInterface;
+use Clue\React\SQLite\DatabaseInterface;
 use Expose\Common\Http\RouteGenerator;
 use Phar;
 use Ratchet\Server\IoServer;
@@ -276,7 +276,7 @@ class Factory
     protected function bindDatabase()
     {
         app()->singleton(DatabaseInterface::class, function () {
-            $factory = new \React\Async\SQLite\Factory(
+            $factory = new \Clue\React\SQLite\Factory(
                 $this->loop,
                 Phar::running(false) ? null : ''
             );
