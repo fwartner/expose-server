@@ -39,7 +39,7 @@ return [
     | admin interface.
     |
     */
-    'validate_auth_tokens' => false,
+    'validate_auth_tokens' => true,
 
     /*
     |--------------------------------------------------------------------------
