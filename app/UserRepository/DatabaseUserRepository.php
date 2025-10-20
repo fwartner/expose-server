@@ -4,8 +4,8 @@ namespace Expose\Server\UserRepository;
 
 use Expose\Server\Contracts\ConnectionManager;
 use Expose\Server\Contracts\UserRepository;
-use Clue\React\SQLite\DatabaseInterface;
-use Clue\React\SQLite\Result;
+use React\Async\SQLite\DatabaseInterface;
+use React\Async\SQLite\Result;
 use React\Promise\Deferred;
 use React\Promise\PromiseInterface;
 

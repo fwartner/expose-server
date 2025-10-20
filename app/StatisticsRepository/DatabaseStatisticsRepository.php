@@ -3,8 +3,8 @@
 namespace Expose\Server\StatisticsRepository;
 
 use Expose\Server\Contracts\StatisticsRepository;
-use Clue\React\SQLite\DatabaseInterface;
-use Clue\React\SQLite\Result;
+use React\Async\SQLite\DatabaseInterface;
+use React\Async\SQLite\Result;
 use React\Promise\Deferred;
 use React\Promise\PromiseInterface;
 

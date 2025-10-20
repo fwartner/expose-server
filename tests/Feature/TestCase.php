@@ -2,13 +2,13 @@
 
 namespace Tests\Feature;
 
-use Clue\React\SQLite\DatabaseInterface;
+use React\Async\SQLite\DatabaseInterface;
 use React\EventLoop\LoopInterface;
 use React\Promise\PromiseInterface;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Symfony\Component\Console\Output\ConsoleOutputInterface;
 
-use function Clue\React\Block\await;
+use function React\Async\Block\await;
 
 abstract class TestCase extends \Tests\TestCase
 {

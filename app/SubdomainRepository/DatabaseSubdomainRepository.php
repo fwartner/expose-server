@@ -3,8 +3,8 @@
 namespace Expose\Server\SubdomainRepository;
 
 use Expose\Server\Contracts\SubdomainRepository;
-use Clue\React\SQLite\DatabaseInterface;
-use Clue\React\SQLite\Result;
+use React\Async\SQLite\DatabaseInterface;
+use React\Async\SQLite\Result;
 use React\Promise\Deferred;
 use React\Promise\PromiseInterface;
 

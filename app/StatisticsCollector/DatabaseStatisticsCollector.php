@@ -3,7 +3,7 @@
 namespace Expose\Server\StatisticsCollector;
 
 use Expose\Server\Contracts\StatisticsCollector;
-use Clue\React\SQLite\DatabaseInterface;
+use React\Async\SQLite\DatabaseInterface;
 
 class DatabaseStatisticsCollector implements StatisticsCollector
 {
